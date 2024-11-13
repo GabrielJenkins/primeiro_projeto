@@ -1,11 +1,12 @@
 nome = input("Qual é o seu nome?: ")
-mes = "JANEIRO"
-valor_compra = 500.00
+mes = input("Em que mês realizaste a compra?: ")
+valor_compra = float(input("Qual é o valor de sua compra?: "))
 desconto = 10
-cupom_de_desconto = "PAULAÉ10"
+cupom_de_desconto = "É10"
 
-print("Olá", nome ,". Em", mes , " você realizou uma compra no valor de R$", valor_compra , " e ganhou um desconto de", desconto , "% em sua próxima compra. Use o cupom", cupom_de_desconto)
+print(f"Olá {nome}. Em {mes} você realizou uma compra no valor de R${valor_compra} e ganhou um cupom de desconto no valor de {desconto}% em sua próxima compra. Use o cupom {nome}{cupom_de_desconto}")
 
+cupom_input = input("Insira seu cupom de desconto: ")
 
 porcentagem_desconto = (valor_compra*desconto)/100
 
